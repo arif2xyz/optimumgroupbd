@@ -1,1 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: white;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
 

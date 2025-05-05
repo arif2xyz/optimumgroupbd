@@ -9,69 +9,43 @@
 </head>
 <body>
 
-  <header>
-<div class="logo">
-  <img src="images/logo.png" alt="Optimum Group BD" class="logo-img">
-  <span>Optimum Group BD</span>
-</div>
-
-
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<div class="dropdown">
-<a href="#">Business ▾</a>
-<div class="dropdown-content">
-<a href="#">Consulting</a>
-<a href="#">Development</a>
-<a href="#">Training</a>
-</div>
-</div>
-<div class="dropdown">
-<a href="#">Media ▾</a>
-<div class="dropdown-content">
-<a href="#">Notice</a>
-<a href="#">Gallery</a>
-<a href="#">News</a>
-<a href="#">Videos</a>
-</div>
-</div>
-<a href="#">Career</a>
-<a href="#">Contact</a>
-</nav>
-
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Optimum Group BD Logo" class="logo-img">
+    <span class="logo-text">Optimum Group BD</span>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li class="dropdown">
+        <a href="#">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Consulting</a></li>
+          <li><a href="#">Development</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Media</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
+<main class="hero">
+  <h1>Shaping the Future, Together.</h1>
+  <p>Welcome to Optimum Group BD — your trusted partner in innovation and success.</p>
+</main>
 
-  <main class="hero">
-    <h1>Shaping the Future, Together.</h1>
-    <p>Welcome to Optimum Group BD — your trusted partner in innovation and success.</p>
-  </main>
+<footer>
+  &copy; 2025 Optimum Group BD. All rights reserved.
+</footer>
 
-  <footer>
-    © 2025 Optimum Group BD. All rights reserved.
-  </footer>
-<script>
-  document.querySelectorAll('.dropbtn').forEach(button => {
-    button.addEventListener('click', function(e) {
-      e.preventDefault();
-      const dropdown = this.parentElement;
-      dropdown.classList.toggle('show');
-
-      // Close others
-      document.querySelectorAll('.dropdown').forEach(d => {
-        if (d !== dropdown) d.classList.remove('show');
-      });
-    });
-  });
-
-  // Close dropdown when clicking outside
-  window.addEventListener('click', function(e) {
-    if (!e.target.matches('.dropbtn')) {
-      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('show'));
-    }
-  });
-</script>
-
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -78,11 +78,6 @@ nav {
   gap: 1rem;
 }
 
-  nav {
-    margin-top: 1rem;
-    flex-direction: column;
-    width: 100%;
-  }
 
 /* Dropdown Base */
 .dropdown {

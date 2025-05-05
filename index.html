@@ -53,6 +53,27 @@
   <footer>
     © 2025 Optimum Group BD. All rights reserved.
   </footer>
+<script>
+  document.querySelectorAll('.dropbtn').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dropdown = this.parentElement;
+      dropdown.classList.toggle('show');
+
+      // Close others
+      document.querySelectorAll('.dropdown').forEach(d => {
+        if (d !== dropdown) d.classList.remove('show');
+      });
+    });
+  });
+
+  // Close dropdown when clicking outside
+  window.addEventListener('click', function(e) {
+    if (!e.target.matches('.dropbtn')) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('show'));
+    }
+  });
+</script>
 
 </body>
 </html>

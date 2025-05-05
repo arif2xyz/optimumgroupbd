@@ -15,6 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1.5rem 2rem;
   background: white;
   border-bottom: 1px solid #eee;
@@ -24,6 +25,12 @@ header {
   font-size: 1.4rem;
   font-weight: bold;
   color: #007BFF;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 nav a {
@@ -46,3 +53,15 @@ footer {
   border-top: 1px solid #eee;
 }
 
+/* Responsive layout */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+    margin-left: 0;
+  }
+}

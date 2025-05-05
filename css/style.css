@@ -1,3 +1,4 @@
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@ body {
   min-height: 100vh;
 }
 
+/* Header styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -21,8 +23,10 @@ header {
   padding: 1.5rem 2rem;
   background: white;
   border-bottom: 1px solid #eee;
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
+/* Logo styling */
 .logo {
   display: flex;
   align-items: center;
@@ -32,24 +36,31 @@ header {
   color: #007BFF;
 }
 
+/* Navigation styling */
 nav {
   display: flex;
   gap: 1.5rem;
   align-items: center;
   position: relative;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
 }
 
+/* Navigation links */
 nav a {
   text-decoration: none;
   color: #007BFF;
   font-weight: 500;
   position: relative;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
+/* Dropdown container */
 .dropdown {
   position: relative;
 }
 
+/* Dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -62,6 +73,7 @@ nav a {
   padding: 0.5rem 0;
 }
 
+/* Dropdown links */
 .dropdown-content a {
   display: block;
   padding: 0.5rem 1rem;
@@ -70,19 +82,23 @@ nav a {
   white-space: nowrap;
 }
 
+/* Dropdown hover effect */
 .dropdown-content a:hover {
   background-color: #f2f2f2;
 }
 
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* Hero section */
 .hero {
   text-align: center;
   padding: 6rem 2rem;
 }
 
+/* Footer styling */
 footer {
   text-align: center;
   padding: 2rem;

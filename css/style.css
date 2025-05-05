@@ -64,8 +64,7 @@ footer {
     margin: 0.5rem 0;
     margin-left: 0;
   }
-}
-.logo {
+  .logo {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -74,5 +73,7 @@ footer {
 .logo-img {
   height: 40px;
   width: auto;
+}
+
 }
 

@@ -145,3 +145,29 @@ footer {
   }
 }
 
+.banner-with-text {
+  position: relative;
+  width: 100%;
+}
+
+.banner-with-text img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* optional overlay */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+

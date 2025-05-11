@@ -144,43 +144,4 @@ footer {
     display: block;
   }
 }
-.hero-banner {
-  background: url('images/banner.png') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
-}
-
-.banner-content {
-  background-color: rgba(0, 0, 0, 0.6); /* Optional dark overlay */
-  padding: 40px;
-  border-radius: 10px;
-}
-
-.banner-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.banner-content p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.cta-btn {
-  padding: 10px 25px;
-  background-color: #0056b3;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.cta-btn:hover {
-  background-color: #004494;
-}
 

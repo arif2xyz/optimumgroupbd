@@ -35,6 +35,7 @@ header {
   padding: 1.5rem 2rem;
   background: white;
   border-bottom: 1px solid #eee;
+  z-index: 1000;
 }
 
 .logo {

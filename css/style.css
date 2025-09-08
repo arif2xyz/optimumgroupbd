@@ -241,3 +241,79 @@ footer {
     max-width: 300px;
   }
 }
+/* About Section Styles */
+.content {
+  padding: 4rem 2rem;
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+  margin-bottom: 1rem;
+  color: #007BFF;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Directors Grid */
+.directors {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+}
+
+.directors h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #007BFF;
+}
+
+.directors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.director-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.director-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.director-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.director-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Responsive Directors Layout */
+@media (max-width: 768px) {
+  .directors-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

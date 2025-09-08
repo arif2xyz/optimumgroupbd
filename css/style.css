@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
 html, body {
   height: 100%;
 }
@@ -15,21 +19,26 @@ body {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
+  padding-top: 80px; /* Space for fixed navbar */
 }
 
 main {
   flex: 1;
 }
 
+/* Header / Navbar */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem;
   background: white;
   border-bottom: 1px solid #eee;
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo {
@@ -50,7 +59,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 1rem;
 }
 
 nav a {
@@ -58,6 +66,11 @@ nav a {
   text-decoration: none;
   color: #007BFF;
   font-weight: 500;
+}
+
+nav a:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
 
 /* Dropdown Styles */
@@ -100,17 +113,95 @@ nav a {
   display: block;
 }
 
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
+/* Banner */
+.banner-with-text {
+  position: relative;
+  width: 100%;
 }
 
+.banner-with-text img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+/* General Content Sections */
+.content {
+  padding: 4rem 2rem;
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+  margin-bottom: 1rem;
+  color: #007BFF;
+}
+
+/* Board of Directors */
+.directors {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.directors h2 {
+  margin-bottom: 2rem;
+  color: #007BFF;
+}
+
+.director-card {
+  display: inline-block;
+  width: 220px;
+  margin: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.director-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.director-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.director-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
   background: #f9f9f9;
   border-top: 1px solid #eee;
+  margin-top: auto;
 }
 
 /* Responsive layout */
@@ -144,32 +235,9 @@ footer {
   .dropbtn:active + .dropdown-content {
     display: block;
   }
+
+  .director-card {
+    width: 100%;
+    max-width: 300px;
+  }
 }
-
-.banner-with-text {
-  position: relative;
-  width: 100%;
-}
-
-.banner-with-text img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4); /* optional overlay */
-  padding: 1rem 2rem;
-  border-radius: 10px;
-}
-
-
-
